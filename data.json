@@ -1,0 +1,37 @@
+{
+  "stationId": "WX-LVIV-01",
+  "stationName": "Lviv Central Automated Meteorological Post",
+  "observationDate": "2026-09-21",
+  "isActive": true,
+  "location": {
+    "latitude": 49.8397,
+    "longitude": 24.0297,
+    "altitudeMeters": 296
+  },
+  "sensors": [
+    {
+      "sensorId": "DHT-22-T01",
+      "type": "Ambient Temperature",
+      "unit": "°C",
+      "isCalibrated": true,
+      "readings": [
+        { "timestamp": "2026-09-21T00:00:00Z", "value": 11.4, "errorCode": null },
+        { "timestamp": "2026-09-21T06:00:00Z", "value": 8.9, "errorCode": null },
+        { "timestamp": "2026-09-21T12:00:00Z", "value": 18.2, "errorCode": null },
+        { "timestamp": "2026-09-21T18:00:00Z", "value": null, "errorCode": "ERR_BUS_TIMEOUT" }
+      ]
+    },
+    {
+      "sensorId": "BMP280-P02",
+      "type": "Atmospheric Pressure",
+      "unit": "hPa",
+      "isCalibrated": false,
+      "readings": [
+        { "timestamp": "2026-09-21T00:00:00Z", "value": 1012.6, "errorCode": null },
+        { "timestamp": "2026-09-21T06:00:00Z", "value": 1013.0, "errorCode": null },
+        { "timestamp": "2026-09-21T12:00:00Z", "value": null, "errorCode": "ERR_CRC_FAILED" },
+        { "timestamp": "2026-09-21T18:00:00Z", "value": 1014.1, "errorCode": null }
+      ]
+    }
+  ]
+}
